@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row"> 
+    <div class="col-sm-12"> 
+        <form #formData="ngForm" (ngSubmit)="sendData(formData)">
+
+            <div class="form-group">
+                <label for="">Id</label>
+                <input type="number" class="form-control" id="id" name="id" [(ngModel)]="postFormObj.id">
+            </div>
+        
+          <div class="form-group">
+            <label for="">Title</label>
+            <input type="text" class="form-control" id="title" name="title" [(ngModel)]="postFormObj.title">
+          </div>
+        
+          <div class="form-group">
+              <label for="">Body</label>
+              <input type="text" class="form-control" id="body" name="body" [(ngModel)]="postFormObj.body">
+          </div>
+        
+          <div class="form-group">
+              <label for="">UserId</label>
+              <input type="number" class="form-control" id="userId" name="userId" [(ngModel)]="postFormObj.userId">
+          </div>
+        
+         
+        
+          <button type="submit" class="btn btn-primary">{{buttonName}}</button>
+        
+        </form>
+        
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="card ml-3 mb-3" style="width: 18rem;">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{detailPosts.title}}</h5>
+              <p class="card-text">{{detailPosts.title}}</p>
+              <button class="btn btn-danger mr-4" (click)="deleteDetails(detailPosts.id)">Delete</button>
+              <button class="btn btn-success" [routerLink]="['/createPost', detailsId]">Update</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>

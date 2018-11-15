@@ -1,0 +1,16 @@
+
+<div class="container"> 
+  <div class="row"> 
+    <div class="col-sm-12">
+      <ul class="list-group ">
+        
+        <li class="list-group-item mb-4" *ngFor = "let post of posts">
+          <a href="" class="mt-4">{{post.title}}</a><br>      
+          <!-- <button class="btn btn-priamry" [routerLink]="['/createPost', post.id]">Update</button>
+          <button (click)="deletePost(post)" class="btn btn-danger ml-4 ">Delete</button> -->
+          <button class=" mt-2 btn btn-success " [routerLink]="['/details', post.id]">Details</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
